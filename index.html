@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESTAURANT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./hotel.css">
+</head>
+<body>
+  <div class="outer">
+    <!-- LEFT  -->
+    <aside class="left">
+      <h2 class="logo">🍽 YAALI </h2>
+      <nav class="selection">
+        <h2>Dash Board</h2>
+        <button>Reservation</button>
+        <button class="highlight"> Menu</button>
+        <button>Payments</button>
+        <button>Customers</button>
+        <button>Report</button>
+        <button>User</button>
+        <button>Settings</button>
+        <button>Reviews</button>
+      </nav>
+    </aside>
+
+    <!-- //center -->
+    <main class="center">
+      <div class="top-bar">
+        <nav class="start">
+          <a href="about">ABOUT US</a>
+          <a href="menu">MENU </a>
+          <a href="contact">CONTACT</a>
+        </nav>
+        <input type="text" placeholder="Search in products">
+        <select>
+          <option>All items</option>
+          <option value="a">Pizza</option>
+          <option value="b">Burgers</option>
+          <option value="c">Sides</option>
+          <option value="d">Drinks</option>
+        </select>
+        <select>
+          <option>Select Brand</option>
+          <option value="e">KFC</option>
+          <option value="f">Burger King</option>
+          <option value="g">Domino's</option>
+          <option value="h">Pizza Hut</option>
+        </select>
+      </div>
+
+  <!-- images -->
+      <div class="products">
+        <div class="card">
+          <img src="./veg pizza.jpg" alt="">
+          <p>Veg Pizza</p>
+          <span>299 rs</span>
+          <button class="add-btn">+</button>
+        </div>
+        <div class="card">
+          <img src="./non veg pizza.jpg" alt="">
+          <p>Non-Veg  Pizza</p>
+          <span>399 rs</span>
+          <button class="add-btn">+</button>
+        </div>
+        <div class="card">
+          <img src="./veg burger.webp" alt="">
+          <p>Veg Burger</p>
+          <span>199 rs</span>
+          <button class="add-btn">+</button>
+        </div>
+        <div class="card">
+          <img src="./non veg burger.jpeg" alt="">
+          <p>Chicken Burger</p>
+          <span>249 rs</span>
+          <button class="add-btn">+</button>
+        </div>
+        <div class="card">
+          <img src="./pop cron.webp" alt="">
+          <p>Chicken Pop Corn</p>
+          <span>299 rs</span>
+          <button class="add-btn">+</button>
+        </div>
+        <div class="card">
+          <img src="./nuggets.jpg" alt="">
+          <p>Chicken Nuggets</p>
+          <span>229 rs</span>
+          <button class="add-btn">+</button>
+        </div>
+        <div class="card">
+          <img src="./fries.jpg" alt="">
+          <p>French Fries</p>
+          <span>199 rs</span>
+          <button class="add-btn">+</button>
+        </div>
+        <div class="card">
+          <img src="./wings.jpg" alt="">
+          <p>Garlic Bread</p>
+          <span>159 rs</span>
+          <button class="add-btn">+</button>
+        </div><div class="card">
+          <img src="./wings.jpg" alt="">
+          <p>Chicken Wings</p>
+          <span>249 rs</span>
+          <button class="add-btn">+</button>
+        </div><div class="card">
+          <img src="./wrap.webp" alt="">
+          <p>Chicken Wrap</p>
+          <span>199 rs</span>
+          <button class="add-btn">+</button>
+        </div><div class="card">
+          <img src="./dips.jpg" alt="">
+          <p>Side Dips</p>
+          <span>99 rs</span>
+          <button class="add-btn">+</button>
+        </div>
+        <div class="card">
+          <img src="./coke.webp" alt="">
+          <p>Diet Coke </p>
+          <span>99 rs</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="right">
+      <div class="right-top">
+        <input type="text" placeholder="Search in Existing........">
+        <select>
+          <option value="">Select Dining</option>
+          <option value="">Dine-in</option>
+          <option value="">Delivery</option>
+          <option value="">Take Away</option>
+        </select>
+      </div>
+      <div class="order-section">
+        <h3>Order #20</h3>
+        <div class="order-item">
+          <div class="info">
+            <h4>Veg Burger</h4>
+            <p>299 rs × 2 = <span>598 rs</span></p>
+          </div>
+          <div class="icon">
+            <button>-</button>
+            <span>2</span>
+            <button>+</button>
+          </div>
+        </div>
+
+        <div class="order-item">
+          <div class="info">
+            <h4>Non-Veg Pizza</h4>
+            <p>399 rs × 2 = <span>789 rs</span></p>
+          </div>
+          <div class="icon">
+            <button>-</button>
+            <span>2</span>
+            <button>+</button>
+          </div>
+        </div>
+
+        <div class="order-item">
+          <div class="info">
+            <h4>Peri Peri french Fries</h4>
+            <p>199 rs × 1 = <span>199rs</span></p>
+          </div>
+          <div class="icon">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+        </div>
+
+    
+        <div class="summary">
+          <p>Sub total : <span id="subtotal">1586rs</span></p>
+          <p>Product Discount : <span>250rs</span></p>
+          <p>Extra Discount : <span>0.00</span></p>
+          <p>Coupon Discount : <span>0.00</span></p>
+          <h3>Total : <span id="total">1236 rs</span></h3>
+        </div>
+
+        <div class="buttons">
+          <button class="dark">Scan & Pay</button>
+          <button class="orange">Bill & Payment</button>
+          <button class="green">Bill & Print</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+  <footer class="down">
+    <h3>"Welcome visit Again...!"</h3>
+    <div class="bottom">
+      <p>yaali12345@gmail.com</p>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+    </footer>
+    <script src="./hotel.js"></script>
+</body>
+</html>
