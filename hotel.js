@@ -1,4 +1,4 @@
-// 1️⃣ When you click the + button on a product card
+
 let addButtons = document.querySelectorAll(".add-btn");
 
 addButtons.forEach(button => {
@@ -7,7 +7,6 @@ addButtons.forEach(button => {
   });
 });
 
-// 2️⃣ When you click + or - inside the order section
 let orderItems = document.querySelectorAll(".order-item");
 
 orderItems.forEach(item => {
@@ -29,3 +28,4 @@ orderItems.forEach(item => {
     }
   });
 });
+
